@@ -1,18 +1,12 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "iGEM Wiki",
+  url: "https://igem-wiki.vercel.app", // XXX: Change this to your own domain
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-  ],
+    "A wiki for the UofL iGEM team to share their projects, lab notebooks, and more.",
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
+    github: "https://github.com/MattyD1/igem-wiki-template",
     docs: "https://ui.shadcn.com",
   },
 }
