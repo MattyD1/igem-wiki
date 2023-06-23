@@ -1,0 +1,193 @@
+---
+title: Introduction
+description: Getting started with the UofL iGem wiki.
+---
+
+In this section, you will find information on how to use the wiki and what you can use to make the wiki great. If you are new to the wiki, this is the **perfect** place to be as we will guide you through our entire project step by step.
+
+If you are not new to the wiki or would just like to explore at your own pace feel free to use the navigation bar on the left to explore at your lesiure.
+
+_Now lets talk about the features of this wiki._
+
+## Tables
+
+Tables are widely used in documentation and are **100%** supported by the wiki. You can create a table by using the following syntax:
+
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| R1C1     | R1C2     | R1C3     |
+| R2C1     | R2C2     | R2C3     |
+| R3C1     | R3C2     | R3C3     |
+| R4C1     | R4C2     | R4C3     |
+
+## Images
+
+Images are also supported by the wiki with tailwind classnames! You can create an image by using the following syntax:
+
+![This is the caption for this image](/test_image.png)
+
+## Paragraphs
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et. Sed tempus metus at mauris sodales, maximus pretium dolor aliquam. Cras dui sapien, pellentesque vel arcu consequat, feugiat volutpat tellus. Phasellus at eros tellus. Mauris ultricies in arcu id elementum. Pellentesque ornare finibus maximus. Phasellus lobortis dignissim sapien dictum pulvinar. Mauris id odio id libero gravida lobortis vitae vitae mi. Morbi faucibus porta enim, vulputate sollicitudin enim ullamcorper eget. Pellentesque at massa vehicula, malesuada enim eu, ornare neque. Donec vitae placerat nibh, sed pharetra mauris. In sit amet dictum sem.
+
+Nam commodo suscipit accumsan. Phasellus sollicitudin accumsan quam et rhoncus. Nunc id lectus sem. Etiam sem orci, viverra non enim at, dignissim pretium tortor. Aliquam id leo eget orci ornare porttitor eu a lectus. Integer molestie, leo a bibendum consectetur, tortor elit dictum quam, at suscipit magna mi tristique sem. Aenean nec consequat purus. Cras bibendum consectetur lacus sit amet malesuada. In pulvinar quis elit a volutpat. Sed orci risus, faucibus non molestie vel, fermentum nec sem. Vivamus ultrices justo ut justo consectetur rutrum. Suspendisse vitae elit a velit congue venenatis. Duis nunc sem, scelerisque et nunc a, vulputate congue magna.
+
+Nulla mauris purus, congue eget consectetur in, ullamcorper in sapien. Ut faucibus ultricies ligula ut imperdiet. Sed euismod dolor at mauris tempus finibus. Maecenas maximus, libero eget rhoncus tincidunt, metus elit dapibus ligula, in auctor turpis leo non nibh. Etiam eleifend rhoncus nibh aliquet mollis. Integer volutpat egestas justo. Curabitur dignissim pharetra dui at volutpat. Nulla varius eros dui, blandit pretium nisl auctor ut. Donec imperdiet sit amet ante vel consequat. Donec consectetur vel erat sed malesuada. Suspendisse eget eros ac lacus sollicitudin pharetra in sed tortor.
+
+### Emojis — 😊 😇 😍 🫥 🙌
+
+### Block Quotes
+
+Block Quotes are also supported by the wiki. You can create a code block by using the following syntax:
+
+> "Some famous quote by some famous person" — Some famous person"
+
+### Lists
+
+Lists are also supported by the wiki. Both ordered lists as well as unordered lists are supported. You can create a list by using the following syntax:
+
+#### Ordered list
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+#### Unordered list
+
+- Item 1
+- Item 2
+- Item 3
+
+### Links
+
+Lastly links are also supported by the wiki. Here is an [Example Link](https://google.com).
+
+## Steps
+
+Steps which are are a great way to break up your documentation into steps. There are two ways you can use steps:
+
+**Steps with headings**
+
+Steps with headings will display numbers
+
+<Steps>
+
+### Step 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et.
+
+### Step 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et.
+
+### Step 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</Steps>
+
+**Steps without headings**
+
+Steps without headings will just shift everything to the right and not display numbers
+
+<Steps>
+
+<div className="mb-4" />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</Steps>
+
+## Accordion Menu — FAQ
+
+<Accordion type="multiple">
+
+    <AccordionItem value="faq-1">
+        <AccordionTrigger>
+            Do I need to know how to code?
+        </AccordionTrigger>
+        <AccordionContent>
+            No, you can do almost anything here without coding however, some of the more complicated components liek the accordion or tab use html to render correctly
+
+            **TLDR:**  No, but sort of
+        </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem value="faq-2">
+        <AccordionTrigger>
+            How do I make a new page?
+        </AccordionTrigger>
+        <AccordionContent>
+            Add a new mdx file to the docs folder, the url is then what ever path the file is located in!
+        </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem value="faq-3">
+        <AccordionTrigger>
+            The page isnt loading...
+        </AccordionTrigger>
+        <AccordionContent>
+
+            This means you have made an error when writing you mdx file.  Double check to make sure everything is correctly
+
+            And don't be afraid to look back to this intro document for help!
+
+        </AccordionContent>
+    </AccordionItem>
+
+</Accordion>
+
+## Tabs
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">Tab 1</TabsTrigger>
+  <TabsTrigger value="manual">Tab 2</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+### **Content in Tab 1**
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et.
+
+    - Step 1
+    - Step 2
+    - Step 3
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+### **Content in Tab 2**
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris diam. Quisque vel pellentesque lectus. Morbi bibendum aliquet lectus, ut hendrerit leo accumsan et.
+
+    <Steps>
+
+    <Step>Step 1</Step>
+
+    Nam commodo suscipit accumsan. Phasellus sollicitudin **accumsan quam et rhoncus.** Nunc id lectus sem. Etiam sem orci, viverra non enim at, dignissim pretium tortor. Aliquam id leo eget orci ornare porttitor eu a lectus. Integer molestie, leo a bibendum consectetur, _tortor elit dictum quam_, at suscipit magna mi tristique sem. Aenean nec consequat purus. Cras bibendum consectetur lacus sit amet malesuada. In pulvinar quis elit a volutpat. Sed orci risus, faucibus non molestie vel, fermentum nec sem. Vivamus ultrices justo ut justo consectetur rutrum. Suspendisse vitae elit a velit congue venenatis. Duis nunc sem, scelerisque et nunc a, vulputate congue magna.
+
+    <Step>Step 2</Step>
+
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| R1C1     | R1C2     | R1C3     |
+| R2C1     | R2C2     | R2C3     |
+| R3C1     | R3C2     | R3C3     |
+| R4C1     | R4C2     | R4C3     |
+
+</Steps>
+
+    </TabsContent>
+
+</Tabs>
+
+## Conclusion
+
+That is all for the introduction. If you are new to the wiki, we recommend you read the rest of the documentation in order. If you are not new to the wiki, feel free to explore at your own pace.
