@@ -7,7 +7,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/igem-wiki/out",
+  distDir: "dist",
+  basePath: "/igem-wiki/dist",
+  assetPrefix: "/igem-wiki/dist",
   experimental: {
     appDir: true,
   },

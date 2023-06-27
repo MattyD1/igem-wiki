@@ -1,0 +1,19 @@
+image: node
+
+before_script:
+  - npm install
+
+pages:
+  stage: build
+  script:
+    - npm run-script build
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules/
+      - .next/cache/
+  only:
+    - main
