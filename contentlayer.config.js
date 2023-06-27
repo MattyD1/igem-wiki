@@ -1,4 +1,6 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files"
+import rehypeAutolinkHeadings from "rehype-autolink-headings"
+import rehypeSlug from "rehype-slug"
 import remarkGfm from "remark-gfm"
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
@@ -26,6 +28,11 @@ export const Doc = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    toc: {
+      type: "boolean",
+      required: false,
+      default: true,
+    },
   },
   computedFields,
 }))
@@ -35,5 +42,15 @@ export default makeSource({
   documentTypes: [Doc],
   mdx: {
     remarkPlugins: [remarkGfm],
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          className: ["subheading-anchor"],
+          ariaLabel: "Link to section",
+        },
+      ],
+    ],
   },
 })
